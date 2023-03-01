@@ -55,6 +55,125 @@ footer.footer-area {
     margin: 0;
 }
 
-section.banner-area {
-    padding-bottom: 80px;
+
+section.meal-area {
+    padding: 80px 0;
+}
+
+.single-meal-item {
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-meal-item .meal-feauture-img {
+    width: 40%;
+}
+
+.single-meal-item .meal-body {
+    width: 60%;
+    padding: 40px 20px;
+}
+
+.single-meal-item .meal-feauture-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.single-meal-item  .meal-body h3 {
+    color: #403F3F;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.single-meal-item .meal-body button {
+    padding: 0;
+    line-height: 1;
+    border: 0;
+    background: transparent;
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-weight: 700;
+    color: #403F58;
+    font-size: 36px;
+}
+
+section#banner-area {
+    background-image: url(../images/banner-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+section#banner-area:before{
+    background: #100F0F;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .7;
+}
+
+.banner-content h1 {
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-form {
+    position: relative;
+    margin-top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.banner-form input#search-field {
+    width: 100%;
+    border: 0;
+    padding: 20px 30px;
+}
+
+.btn-primary {
+    font-size: 20px;
+    font-weight: 700;
+    background: #FFC107;
+    height: 100%;
+    transition: .3s all;
+    color: #100F0F;
+    border: 0;
+    padding: 12px 30px;
+}
+
+.btn-primary:hover{
+    background: #e7a51d;
+    color: #000;
+}
+.banner-form .search-btn {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    font-weight: 700;
+    background: #FFC107;
+    height: 100%;
+    width: 160px;
+    transition: .3s all;
+}
+
+.banner-form .search-btn:hover {
+    background: #e7a51d;
+    color: #000;
 }
