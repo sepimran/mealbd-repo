@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6{
+    color: #403F58;
+    font-weight: 700;
+}
+
 img{
     max-width: 100%;
 }
@@ -66,6 +71,7 @@ section.meal-area {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .single-meal-item .meal-feauture-img {
@@ -88,13 +94,20 @@ section.meal-area {
     font-size: 24px;
 }
 
-.single-meal-item .meal-body button {
+/* .single-meal-item .meal-body button {
     padding: 0;
     line-height: 1;
     border: 0;
     background: transparent;
     color: #FFC107;
     text-decoration: underline;
+} */
+
+.single-meal-item .meal-body button {
+    color: #f7b900;
+    padding: 0;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
 .section-heading {
@@ -128,10 +141,12 @@ section#banner-area:before{
     opacity: .7;
 }
 
+
 .banner-content h1 {
     font-size: 62px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .banner-form {
@@ -176,4 +191,72 @@ section#banner-area:before{
 .banner-form .search-btn:hover {
     background: #e7a51d;
     color: #000;
+}
+
+div#meal-details-body img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 3px 2px 10px #ddd;
+    margin-bottom: 25px;
+}
+
+div#meal-details-body ul {
+    list-style: none;
+}
+
+div#meal-details-body ul li {
+    margin-bottom: 6px;
+}
+
+div#meal-details-body ul li b {
+    font-weight: 600;
+    color: #000;
+    margin-right: 6px;
+}
+
+div#meal-details-body ul li a {
+    color: #333;
+}
+
+@media all and (max-width: 992px){
+
+    .banner-content h1 {
+        font-size: 38px;
+    }
+    
+    .section-heading h2 {
+        font-size: 30px;
+    }
+    
+    .single-meal-item .meal-body h3 {
+        font-size: 20px;
+    }
+
+    .banner-form .search-btn {
+        max-width: 120px;
+    }
+
+    .banner-form .search-btn {
+        max-width: 120px;
+    }
+    
+    header#header-area .col-lg-6 {
+        width: 50%;
+    }
+
+    .single-meal-item .meal-feauture-img {
+        width: 100%;
+    }
+    
+    .single-meal-item .meal-body {
+        width: 100%;
+    }
+    
+    .single-meal-item .meal-feauture-img img {
+        max-height: 250px;
+        width: 100%;
+    }
+
 }
